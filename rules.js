@@ -25,7 +25,7 @@ module.exports = exports = function(webot){
     handler: function(info){
       var reply = {
         title: '感谢您收听羊圈[Yjion.com]微信公众平台;',
-        pic: 'hhttp://www.yjion.com/qrcode.jpg',
+        pic: 'http://www.yjion.com/qrcode.jpg',
         url: 'ttp://www.yjion.com/',
         description: [
           '我们将给您发送最新的羊圈[Yjion.com]资讯和动态\n',
