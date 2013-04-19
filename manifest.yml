@@ -3,7 +3,7 @@ applications:
 - name: webot
   framework: node
   runtime: node08
-  memory: 64M
+  memory: 32M
   instances: 1
   url: webot.${target-base}
   path: .
