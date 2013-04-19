@@ -24,18 +24,19 @@ module.exports = exports = function(webot){
     },
     handler: function(info){
       var reply = {
-        title: '感谢你收听webot机器人',
-        pic: 'https://raw.github.com/ktmud/weixin-robot-example/master/qrcode.jpg',
-        url: 'https://github.com/ktmud/weixin-robot-example',
+        title: '感谢您收听羊圈[Yjion.com]微信公众平台;',
+        pic: 'hhttp://www.yjion.com/qrcode.jpg',
+        url: 'ttp://www.yjion.com/',
         description: [
-          '建议你试试这几条指令:',
-            '1. game : 玩玩猜数字的游戏吧',
-            '2. s+空格+关键词 : 我会帮你百度搜索喔',
-            '3. s+空格+nde : 可以试试我的纠错能力',
-            '4. 发送你的经纬度',
-            '5. 重看本指令请回复help或问号',
-            '6. 更多指令请回复more',
-            'PS: 点击下面的「查看全文」将跳转到我的github页'
+          '我们将给您发送最新的羊圈[Yjion.com]资讯和动态\n',
+          '建议你试试这几条指令:\n',
+            '1. game : 玩玩猜数字的游戏吧\n',
+            '2. s+空格+关键词 : 我会帮你百度搜索喔\n',
+            '3. s+空格+nde : 可以试试我的纠错能力\n',
+            '4. 发送你的经纬度\n',
+            '5. 重看本指令请回复help或问号\n',
+            '6. 更多指令请回复more\n',
+            '点击下面的「查看全文」将跳转到我的羊圈[Yjion.com]主页'
         ].join('\n')
       };
       // 返回值如果是list，则回复图文消息列表
@@ -294,20 +295,20 @@ module.exports = exports = function(webot){
     pattern: /^news\s*(\d*)$/,
     handler: function(info){
       var reply = [{
-        title: '微信机器人',
-        description: '微信机器人测试帐号：webot',
-        pic: 'https://raw.github.com/ktmud/weixin-robot-example/master/qrcode.jpg',
-        url: 'https://github.com/ktmud/weixin-robot-example'
+        title: '羊圈[Yjion.com]',
+        description: '羊圈机器人测试帐号：yjion_',
+        pic: 'http://www.yjion.com/qrcode.jpg',
+        url: 'http://www.yjion.com'
       }, {
-        title: '豆瓣同城微信帐号',
-        description: '豆瓣同城微信帐号二维码：douban-event',
-        pic: 'http://i.imgur.com/ijE19.jpg',
-        url: 'https://github.com/ktmud/weixin-robot'
+        title: '我家主人的微信账号，扫描二维码',
+        description: '丁伟国微信帐号二维码：vachel-event',
+        pic: 'http://www.yjion.com/vachel.jpg',
+        url: 'http://www.yjion.com/vachel.jpg'
       }, {
-        title: '图文消息3',
-        description: '图文消息描述3',
-        pic: 'https://raw.github.com/ktmud/weixin-robot-example/master/qrcode.jpg',
-        url: 'http://www.baidu.com'
+        title: '我家主人的新浪微博，请@丁伟国',
+        description: '新浪微博@丁伟国',
+        pic: 'http://www.yjion.com/223480.jpg',
+        url: 'http://weibo.com/223480/'
       }];
       // 发送 "news 1" 时只回复一条图文消息
       return Number(info.param[1]) == 1 ? reply[0] : reply;
