@@ -56,6 +56,8 @@ module.exports = exports = function(webot){
     return '我的主人还没教我太多东西,你可以考虑帮我加下.\n可用的指令:\n'+ reply;
   });
 
+  // 简单的纯文本对话，可以用单独的 yaml 文件来定义
+  require('js-yaml');
   webot.dialog(__dirname + '/dialog.yaml');
 
   webot.set('who_are_you', {
@@ -77,10 +79,6 @@ module.exports = exports = function(webot){
     // 或者更简单一点
     handler: '你好,{1}'
   });
-
-  // 简单的纯文本对话，可以用单独的 yaml 文件来定义
-  require('js-yaml');
-
 
   // 支持一次性加多个（方便后台数据库存储规则）
   webot.set([{
